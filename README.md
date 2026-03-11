@@ -30,47 +30,51 @@
 
 ### Data Engineering & Business Intelligence (BI)
 
-*   SQL, Базы данных: DWH, ETL, хранимые процедуры, UDF-функции, MS SQL, MySQL, ClickHouse – продвинутый
+*   SQL, Базы данных: DWH, ETL, хранимые процедуры, UDF-функции; MS SQL, MySQL, ClickHouse – продвинутый
 *   BI: Power BI, DAX, OLAP, VBA, Power Pivot, Power Query – продвинутый
 *   ERP: 1С (УПП, ERP, УТ), MS Dynamics NAV – продвинутый
 
 ### Business Analysis & Supply Chain Management
 
-*   Управление цепями поставок (SCM, DRP, MRP)
-*   Оптимизация товарных запасов, ABC/XYZ-анализ, оборачиваемость, уровень сервиса, управление рисками
-*   Планирование и бюджетирование (S&OP, Cash-Flow, P&L, ROI)
-*   Бизнес-анализ, ценообразование и юнит-экономика
-*   Внедрение ERP/BI-систем (1С, Power BI, MS SQL), автоматизация бизнес-процессов
+*	Управление цепочками поставок (SCM, DRP, MRP), S&OP, бюджетирование
+*	Оптимизация товарных запасов (оборачиваемость, уровень сервиса, страховые запасы)
+*	Прогнозирование спроса (статистические методы, ML-модели)
+*	Управление ассортиментом (ABC/XYZ-анализ, кластеризация, юнит-экономика)
+*	Ценообразование и управление себестоимостью, Cash-Flow, P&L, ROI
+*	Создание корпоративных хранилищ данных (DWH) и BI-отчетности (Power BI, OLAP)
+*	1С: УПП, ERP, УТ (внедрение, настройка, доработка)
+*	Управление командой: Agile, Jira, Trello
+
 ---
-## ПРОЕКТЫ / ПОРТФОЛИО / СВОДНАЯ ТАБЛИЦА ПРОЕКТОВ
+## ПРОЕКТЫ / ПОРТФОЛИО / СВОДНАЯ ТАБЛИЦА ПРОЕКТОВ <a class="anchor" id="table1"></a>
 ---
-| №  | Направление | Проект                                                | Ключевая метрика         | Результат                                    |
-|----|-------------|-------------------------------------------------------|--------------------------|----------------------------------------------|
-| 1  | Классификация | СберАвтоподписка (REST API)                           | ROC-AUC                  | 0.7274                                       |
-| 2  | Классификация | Кредитный риск                                        | ROC-AUC                  | 0.7652                                       |
-| 3  | Классификация | Отток клиентов телеком                                | ROC-AUC                  | 0.85+                                        |
-| 4  | Регрессия     | House Prices (LightAutoML)                            | MAE                      | 13 427                                       |
-| 5  | CV            | EMNIST (классические ML)                              | Accuracy                 | 84.28%                                       |
-| 6  | CV            | EMNIST (CNN)                                          | Accuracy                 | 90.88%                                       |
-| 7  | NLP           | Фейковые новости (RNN/LSTM/GRU)                       | Accuracy/F1              | 87.68%/0.692                                 |
-| 8  | NLP           | Спам (BERT/GPT-2)                                     | Accuracy/F1              | 99.30%/0.9945                                |
-| 9  | RecSys        | Книги (ALS)                                           | mAP@10                   | 0.057371                                     |
-| 10 | RecSys        | Книги (гибридная ALS+CatBoost)                        | mAP@10                   | 0.050410                                     |
-| 11 | RecSys        | Рейтинг книги (CatBoost)                              | precision_micro          | 0.4875                                       |
-| 12 | Time Series   | Прогноз спроса (линейная + сезонность)                | R²/MAPE                  | 0.649/15.19%                                 |
-| 13 | Time Series   | ETNA (5 моделей)                                      | SMAPE                    | 11.65%                                       |
-| 14 | Time Series   | TBATS/Prophet/SARIMAX                                 | MAPE                     | 19.53%                                       |
-| 15 | MLOps         | MLflow трекинг (Kinopoisk)                            | Accuracy/F1              | 0.8239/0.7917                                |
-| 16 | MLOps         | Airflow пайплайн (цены авто)                          | Accuracy                 | 0.7388                                       |
-| 17 | Kaggle        | Классификация (Skillbox)                              | Место                    | 1                                            |
-| 18 | Kaggle        | Регрессия (Skillbox)                                  | Место                    | 2                                            |
-| 19 | Kaggle        | House Prices (Kaggle)                                 | Топ %                    | 13% (~500 / 4000)                            |
+| №  | Направление | Проект                                     | Ключевая метрика | Результат                         | Ссылка |
+|----|-------------|--------------------------------------------|------------------|-----------------------------------|--------|
+| 1  | Классификация | СберАвтоподписка (REST API)              | ROC-AUC          | 0.7274                          | [подробнее](#project1) |
+| 2  | Классификация | Кредитный риск                           | ROC-AUC          | 0.7652                          | [подробнее](#project2) |
+| 3  | Регрессия     | House Prices (LightAutoML)               | MAE              | 13 427                          | [подробнее](#project3) |
+| 4  | CV            | EMNIST (классические ML)                 | Accuracy         | 84.28%                          | [подробнее](#project4) |
+| 5  | CV            | EMNIST (CNN)                             | Accuracy         | 90.88%                          | [подробнее](#project5) |
+| 6  | NLP           | Фейковые новости (RNN/LSTM/GRU)          | Accuracy/F1      | 87.68%/0.692                    | [подробнее](#project6) |
+| 7  | NLP           | Спам (BERT/GPT-2)                        | Accuracy/F1      | 99.30%/0.9945                   | [подробнее](#project7) |
+| 8  | RecSys        | Книги (ALS)                              | mAP@10           | 0.057371                        | [подробнее](#project8) |
+| 9  | RecSys        | Книги (гибридная ALS+CatBoost)           | mAP@10           | 0.050410                        | [подробнее](#project9) |
+| 10 | RecSys        | Рейтинг книги (CatBoost)                 | precision_micro  | 0.4875                          | [подробнее](#project10) |
+| 11 | Time Series   | Прогноз спроса (линейная + сезонность)   | R²/MAPE          | 0.649/15.19%                    | [подробнее](#project11) |
+| 12 | Time Series   | ETNA (5 моделей)                         | SMAPE            | 11.65%                          | [подробнее](#project12) |
+| 13 | Time Series   | TBATS/Prophet/SARIMAX                    | MAPE             | 19.53%                          | [подробнее](#project13) |
+| 14 | MLOps         | MLflow трекинг (Kinopoisk)               | Accuracy/F1      | 0.8239/0.7917                   | [подробнее](#project14) |
+| 15 | MLOps         | Airflow пайплайн (цены авто)             | Accuracy         | 0.7388                          | [подробнее](#project15) |
+| 16 | Kaggle        | Классификация (Skillbox)                 | Место            | 1                               | [подробнее](#project16) |
+| 17 | Kaggle        | Регрессия (Skillbox)                     | Место            | 2                               | [подробнее](#project17) |
+| 18 | Kaggle        | House Prices (Kaggle)                    | Топ %            | 13% (~500 / 4000)               | [подробнее](#project18) |
+| 19 | Прошлый опыт  | Бизнес-аналитика / Data Engineering      | 20 лет опыта     | Повышение эффективности бизнеса | [подробнее](#business) |
 
 ---
 
 ### ПРОГНОЗИРОВАНИЕ И КЛАССИФИКАЦИЯ
 ---
-#### Прогнозирование целевых действий пользователя (СберАвтоподписка)
+#### Прогнозирование целевых действий пользователя (СберАвтоподписка) <a class="anchor" id="project1"></a>
 ---
 Разработана ML-модель для предсказания конверсии (целевых действий) пользователей на сайте «СберАвтоподписка», упакована в production-сервис REST API.
 
@@ -93,8 +97,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/SberAutopodpiska_prediction_model](https://github.com/Andrey-Mishenkov/SberAutopodpiska_prediction_model)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Оценка кредитного риска (Credit Risk Assessment)
+#### Оценка кредитного риска (Credit Risk Assessment) <a class="anchor" id="project2"></a>
 ---
 Разработана ML-модель для предсказания дефолта клиента на основе кредитной истории и данных о просрочках.
 
@@ -116,8 +122,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/credit_risk_management_prediction_model](https://github.com/Andrey-Mishenkov/credit_risk_management_prediction_model)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Прогнозирование цены дома (LightAutoML)
+#### Прогнозирование цены дома (LightAutoML) <a class="anchor" id="project3"></a>
 ---
 Разработана регрессионная модель для предсказания стоимости жилых домов на основе датасета Kaggle House Prices.
 
@@ -139,11 +147,13 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/house_prices_prediction_kaggle/tree/main](https://github.com/Andrey-Mishenkov/house_prices_prediction_kaggle/tree/main)
 
+[↑ К таблице проектов](#table1)
+
 ---
 
 ### КОМПЬЮТЕРНОЕ ЗРЕНИЕ
 ---
-#### Распознавание рукописных символов EMNIST (классические ML модели)
+#### Распознавание рукописных символов EMNIST (классические ML модели) <a class="anchor" id="project4"></a>
 ---
 Разработана ML-модель для классификации рукописных букв и цифр на основе датасета EMNIST. Готовая модель упакована в FastAPI-сервис с веб-интерфейсом и запуском в Docker-контейнере.
 
@@ -164,8 +174,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/cv_handwritten_character_recognition_classical_ml](https://github.com/Andrey-Mishenkov/cv_handwritten_character_recognition_classical_ml)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Распознавание рукописных символов EMNIST (CNN)
+#### Распознавание рукописных символов EMNIST (CNN) <a class="anchor" id="project5"></a>
 ---
 Разработана сверточная нейронная сеть для классификации рукописных символов на основе датасета EMNIST. Готовая модель упакована в FastAPI-сервис с веб-интерфейсом и запуском в Docker-контейнере.
 
@@ -186,11 +198,13 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/cv_handwritten_character_recognition_neural_networks](https://github.com/Andrey-Mishenkov/cv_handwritten_character_recognition_neural_networks)
 
+[↑ К таблице проектов](#table1)
+
 ---
 
 ### NLP И АНАЛИЗ ТЕКСТА
 ---
-#### Классификация фейковых новостей (RNN / LSTM / GRU)
+#### Классификация фейковых новостей (RNN / LSTM / GRU) <a class="anchor" id="project6"></a>
 ---
 Разработана модель бинарной классификации новостных статей на реальные и фейковые с использованием рекуррентных нейронных сетей.
 
@@ -214,8 +228,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/fake_news_classification_using_rnn](https://github.com/Andrey-Mishenkov/fake_news_classification_using_rnn)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Классификация спам-сообщений (BERT/GPT-2)
+#### Классификация спам-сообщений (BERT/GPT-2) <a class="anchor" id="project7"></a>
 ---
 Разработана модель бинарной классификации электронных писем на спам и не спам с использованием предобученных трансформеров BERT и GPT-2.
 
@@ -238,11 +254,13 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/spam_classification_models_bert_and_gpt-2](https://github.com/Andrey-Mishenkov/spam_classification_models_bert_and_gpt-2)
 
+[↑ К таблице проектов](#table1)
+
 ---
 
 ### РЕКОМЕНДАТЕЛЬНЫЕ СИСТЕМЫ
 ---
-#### Рекомендательная система книг (ALS – матричная факторизация)
+#### Рекомендательная система книг (ALS – матричная факторизация) <a class="anchor" id="project8"></a>
 ---
 Разработана рекомендательная система книг с использованием метода матричной факторизации (ALS) на основе implicit-оценок.
 
@@ -266,8 +284,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/recommender_system_using_matrix_factorization_als](https://github.com/Andrey-Mishenkov/recommender_system_using_matrix_factorization_als)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Рекомендательная система книг (гибридная ALS + CatBoost)
+#### Рекомендательная система книг (гибридная ALS + CatBoost) <a class="anchor" id="project9"></a>
 ---
 Разработана гибридная рекомендательная система, сочетающая коллаборативную фильтрацию (ALS) и контентные признаки (CatBoost).
 
@@ -291,8 +311,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/recommender_system_hybrid_using_matrix_factorization_als_and_gradient_boosting_catboost](https://github.com/Andrey-Mishenkov/recommender_system_hybrid_using_matrix_factorization_als_and_gradient_boosting_catboost)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Предсказание рейтинга книги (мультиклассовая классификация)
+#### Предсказание рейтинга книги (мультиклассовая классификация) <a class="anchor" id="project10"></a>
 ---
 Создан прототип рекомендательной системы для предсказания рейтинга книги (целые значения 1–5) на основе истории оценок, жанров, эмбеддингов заголовков и описаний.
 
@@ -315,11 +337,13 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/recommender_system_prototype_using_content-based_filtering](https://github.com/Andrey-Mishenkov/recommender_system_prototype_using_content-based_filtering)
 
+[↑ К таблице проектов](#table1)
+
 ---
 
 ### ПРОГНОЗИРОВАНИЕ ВРЕМЕННЫХ РЯДОВ
 ---
-#### Прогнозирование спроса (линейная регрессия + сезонность)
+#### Прогнозирование спроса (линейная регрессия + сезонность) <a class="anchor" id="project11"></a>
 ---
 Проведен анализ продаж компании и сформирован прогноз на следующий год с использованием линейной регрессии и коэффициентов сезонности.
 
@@ -342,8 +366,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/demand_forecasting_using_linear_regression_and_seasonality](https://github.com/Andrey-Mishenkov/demand_forecasting_using_linear_regression_and_seasonality)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Прогнозирование временных рядов (TBATS, Prophet, SARIMAX, AutoARIMA)
+#### Прогнозирование временных рядов (TBATS, Prophet, SARIMAX, AutoARIMA) <a class="anchor" id="project12"></a>
 ---
 Оптимизация и сравнение 4-х моделей временных рядов для прогнозирования спроса на товар, выход на целевую метрику.
 
@@ -367,8 +393,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/time_series_models_TBATS_PROPHET_ARIMA/tree/main](https://github.com/Andrey-Mishenkov/time_series_models_TBATS_PROPHET_ARIMA/tree/main)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Прогнозирование временных рядов (ETNA: Naive, Elastic, CatBoost, Prophet, SARIMAX)
+#### Прогнозирование временных рядов (ETNA: Naive, Elastic, CatBoost, Prophet, SARIMAX) <a class="anchor" id="project13"></a>
 ---
 Настройка и оптимизация 5-ти моделей временных рядов из библиотеки ETNA, выход на целевую метрику. Сформирован прогноз продаж для 150 сегментов (50 товаров × 3 магазина) на горизонт 90 дней.
 
@@ -393,11 +421,13 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/time_series_library_ETNA_models_ELASTIC_CATBOOST_PROPHET_SARIMAX/tree/main](https://github.com/Andrey-Mishenkov/time_series_library_ETNA_models_ELASTIC_CATBOOST_PROPHET_SARIMAX/tree/main)
 
+[↑ К таблице проектов](#table1)
+
 ---
 
 ### MLOps, ИНФРАСТРУКТУРА, ДЕПЛОЙ
 ---
-#### Трекинг экспериментов (MLflow) – классификация тональности отзывов Kinopoisk
+#### Трекинг экспериментов (MLflow) – классификация тональности отзывов Kinopoisk <a class="anchor" id="project14"></a>
 ---
 Проведена реорганизация скрипта классификации отзывов с внедрением системы трекинга экспериментов MLflow.
 
@@ -420,8 +450,10 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/mlflow_experiment_tracking_review_sentiment_classification](https://github.com/Andrey-Mishenkov/mlflow_experiment_tracking_review_sentiment_classification)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Автоматизация ML-пайплайна (Apache Airflow) – предсказание цены автомобиля
+#### Автоматизация ML-пайплайна (Apache Airflow) – предсказание цены автомобиля <a class="anchor" id="project15"></a>
 ---
 Разработан автоматизированный пайплайн машинного обучения для классификации автомобилей по ценовой категории с использованием Apache Airflow.
 
@@ -443,11 +475,13 @@
 
 **GitHub:** [https://github.com/Andrey-Mishenkov/airflow_car_price_prediction_pipeline_training_model](https://github.com/Andrey-Mishenkov/airflow_car_price_prediction_pipeline_training_model)
 
+[↑ К таблице проектов](#table1)
+
 ---
 
 ### KAGGLE-СОРЕВНОВАНИЯ / andreimishenkov
 ---
-#### Kaggle: Классификация (внутреннее соревнование Skillbox)
+#### Kaggle: Классификация (внутреннее соревнование Skillbox) <a class="anchor" id="project16"></a>
 ---
 Предсказание экономических параметров группы людей по их социально-демографическим характеристикам.
 
@@ -460,8 +494,10 @@
 *   Описание: [https://www.kaggle.com/competitions/skillbox-ml-junior-classification-10/leaderboard](https://www.kaggle.com/competitions/skillbox-ml-junior-classification-10/leaderboard)
 *   Лидерборд: [https://www.kaggle.com/competitions/skillbox-ml-junior-classification-10/leaderboard](https://www.kaggle.com/competitions/skillbox-ml-junior-classification-10/leaderboard)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Kaggle: Регрессия (внутреннее соревнование Skillbox)
+#### Kaggle: Регрессия (внутреннее соревнование Skillbox) <a class="anchor" id="project17"></a>
 ---
 Задача регрессии. Определение прочности бетона.
 
@@ -474,8 +510,10 @@
 *   Описание: [https://www.kaggle.com/competitions/skillbox-ml-junior-regression-10/overview](https://www.kaggle.com/competitions/skillbox-ml-junior-regression-10/overview)
 *   Лидерборд: [https://www.kaggle.com/competitions/skillbox-ml-junior-regression-10/leaderboard](https://www.kaggle.com/competitions/skillbox-ml-junior-regression-10/leaderboard)
 
+[↑ К таблице проектов](#table1)
+
 ---
-#### Kaggle: House Prices (публичное соревнование) Advanced Regression Techniques
+#### Kaggle: House Prices (публичное соревнование) Advanced Regression Techniques <a class="anchor" id="project18"></a>
 ---
 Задача регрессии. Прогнозирование цены дома на основе характеристик недвижимости.
 
@@ -491,4 +529,53 @@
 *   Ссылка: [https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview](https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques/overview)
 *   Лидерборд скриншот: [https://github.com/Andrey-Mishenkov/house_prices_prediction_kaggle/blob/main/leaderboard.png](https://github.com/Andrey-Mishenkov/house_prices_prediction_kaggle/blob/main/leaderboard.png)
 
+[↑ К таблице проектов](#table1)
+
 ---
+
+### Предыдущий опыт в бизнес проектах с фокусом на Data Science и Data Engineering <a class="anchor" id="business"></a>
+*(на основе 20 лет работы в аналитике крупных торговых компаний)*
+
+---
+
+#### 1. Data Engineering & Инфраструктура данных
+- **Построение корпоративных хранилищ данных (DWH)** на базе MS SQL Server, консолидация данных из разнородных источников (учетные системы, API, файлы) – создание единого источника правды (Single Source of Truth) для аналитики и ML.
+- **Разработка ETL-пайплайнов** для ежедневного автоматического обновления данных, очистки, трансформации и подготовки витрин для BI и ML-моделей.
+- **Интеграция исторических данных** (до 15 лет) и обеспечение высокого качества данных (Data Quality) – дедубликация, согласование справочников, контроль целостности.
+- **Проектирование структур данных** для партионного учета, адресного хранения и сквозной unit-экономики – основа для детализированного анализа и моделирования.
+
+---
+
+#### 2. Feature Engineering & Подготовка признаков
+- **Разработка алгоритмов расчета 1000+ бизнес-метрик и признаков** (KPI, динамика YoY/MoM, оборачиваемость, уровень сервиса, ABC/XYZ-классификация, сезонные коэффициенты) на уровне клиент + товар + день.
+- **Создание признаков для моделей прогнозирования и оптимизации**: агрегированные статистики, лаговые переменные, скользящие средние, флаги событий, категориальные энкодинги.
+- **Кластеризация товарной матрицы** на основе истории продаж, маржинальности и логистических параметров – сокращение ассортимента на 20% и снижение норматива товарного запаса до 25%.
+- **Формирование датасетов для ML-моделей** непосредственно из DWH, обеспечение воспроизводимости выборок и автоматизации их обновления.
+
+---
+
+#### 3. Прогнозирование и оптимизационные модели
+- **Разработка и внедрение систем прогнозирования спроса** на различных горизонтах (неделя, месяц, год) с использованием статистических методов и правил (линейная регрессия, сезонные индексы, экспоненциальное сглаживание). Повышение точности автозаказа на 15%, сокращение дефицита на 10%.
+- **Создание моделей оптимизации товарных запасов**: расчет оптимального страхового запаса и точки заказа на основе исторических данных о спросе и сроках поставки. Снижение вложений в запасы на 15–25% по разным категориям.
+- **Автоматизация процесса пополнения запасов (автозаказ)** – rule-based модели, учитывающие остатки, резервы, скорость продаж, сезонность и логистические ограничения. Сокращение времени формирования заказов и повышение точности планирования.
+- **Модели динамического ценообразования и unit-экономики**: алгоритмы расчета оптимальной цены с учетом затрат, спроса и нормы прибыли; расчет чистой маржинальности в разрезе товар–клиент (включая стоимость обработки запаса).
+
+---
+
+#### 4. Внедрение и автоматизация в production-среде
+- **Разработка production-систем** на базе 1С (УПП, ERP, УТ) и MS SQL Server: модули автоматического резервирования товаров, контроля жизненного цикла заказов, управления промо-акциями, транспортной логистики.
+- **Построение корпоративной BI-отчетности** (OLAP-кубы, Power BI, SSAS) с ежедневным обновлением – обеспечение прозрачности и оперативного мониторинга ключевых показателей бизнеса.
+- **Участие в миграциях данных** при внедрении ERP-систем (MS Navision, 1С), обеспечение целостности и полноты исторических данных для последующего анализа.
+
+---
+
+#### 5. Управление аналитическими проектами и командой
+- **Руководство отделами аналитики и планирования** (штат до 6 человек): постановка задач, контроль выполнения, развитие компетенций команды в области анализа данных и автоматизации.
+- **Взаимодействие с бизнес-заказчиками**: перевод бизнес-требований на язык математических моделей и кода, обоснование экономической эффективности внедряемых решений.
+- **Опыт внедрения систем класса S&OP (Sales & Operations Planning)**, бюджетирования и сквозной аналитики, охватывающей всю цепочку поставок (от закупок в Китае до продаж в рознице).
+
+[↑ К таблице проектов](#table1)
+
+---
+
+
